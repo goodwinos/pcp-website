@@ -1,0 +1,287 @@
+/*
+* This file defines the size/margins/font/colours of things
+*/
+
+p{ line-height: 1em; }
+
+/* h stands for heading, you can define different headings */
+
+h1{
+  color: #F4F4F4;
+  font-family:Spinnaker;
+	font-weight: bolder;
+	line-height: 1.1em;
+	margin: 0px 0px 0px 25%;
+  width: 50%;
+  text-align:center;
+}
+
+h3,h5{
+  color: #373737;
+  font-family:Raleway;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+
+h2{
+  color: #373737;
+  font-family:Spinnaker;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 0 0 .5em 0;
+}
+
+h4{
+  color: #F4F4F4;
+  font-family:Spinnaker;
+	font-weight: bolder;
+	line-height: 1.5em;
+	margin: -5% 0px 0px 25%;
+  width: 50%;
+  text-align:center;
+}
+
+h6{
+  color: #F4F4F4;
+  font-family:Spinnaker;
+	font-weight: bolder;
+	line-height: 1.1em;
+	margin: 0px 0px 0px 25%;
+  width: 50%;
+  text-align:center;
+}
+
+h1{ font-size: 3.0em; }
+h2{ font-size: 1.8em; }
+h3{ font-size: 3.0em; }
+h4{ font-size: 250%;}
+h5{ font-size: 1.8em; }
+h6{ font-size: 2.0em; }
+a{
+	color: #F4F4F4;
+	text-decoration: none;
+}
+	a:hover,
+	a:active{ text-decoration: underline; }
+
+/* you can structure your code's white space so that it is as readable for when
+you come back in the future or for other people to read and edit quickly */
+
+body{
+    font-family: Raleway; font-weight:lighter; font-size: 110%;
+    line-height: 1.2em; width: 100%;
+    margin: 0;text-align:center;
+    background: #ECECE9
+}
+
+#page{ margin: 30px;margin-top: 190; }
+
+#logo{
+	width: 100%;
+	margin-top: 100px;
+	font-family: Raleway;
+	display: inline-block;
+}
+
+#logo1{
+	width: 100%;
+	margin-top: 0px;
+	font-family: Raleway;
+	display: inline-block;
+}
+
+#nav{
+	width: 100%;
+  margin:0px;
+  margin-top:-60px;
+  margin-bottom: 0px;
+	display: inline-block;
+	text-align: center;
+	float: center;
+  color: #white;
+  background-color: #373737;
+
+}
+	#nav ul{}
+		#nav ul li{
+			display: inline-block;
+			height: 22px;
+		}
+    #nav li + li:before{
+          content:' | ';
+          padding-right:10px;
+          color: white;
+          font-size: 100%;
+        }
+			#nav ul li a{
+				padding: 18px;
+				background: #373737;
+				color: #white;
+        font-size: 100%;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: none;
+			}
+			#nav ul li a:hover{
+				background-color: black;
+				box-shadow: 0px 1px 1px black;
+			}
+			#nav ul li a:active{ background-color: #373737; background: #373737;}
+
+
+#nav2{
+      	width: 60%;
+      	display: inline-block;
+      	text-align: center;
+      	float: center;
+        margin-top:50px;
+        margin-bottom:-30px;
+      }
+      	#nav2 ul{}
+      		#nav2 ul li{
+      			display: inline-block;
+      			height: 62px;
+      		}
+      			#nav2 ul li a{
+      				padding: 20px;
+              padding-right:100px;
+              padding-left:100px;
+      				background: #D7D7D7;
+      				color: #373737;
+              font-size: 150%;
+              font-weight: bolder;
+              border-radius: 25px;
+              border-color: white;
+      			}
+      			#nav2 ul li a:hover{
+      				background-color: darkgrey;
+      				box-shadow: 0px 2px 2px #white;
+      			}
+      			#nav2 ul li a:active{ background-color: darkgrey; }
+
+#content{
+  line-height: 20px;
+  width:90%;
+  margin-left:10px;
+  margin-top:200px;
+	background: #D7D7D7;
+  color:#373737;
+	padding: 60px;
+	clear: both;
+  border: 2px solid white;
+}
+
+#content1{
+  line-height: 20px;
+	margin: 5% 10%;
+  margin-top:10%;
+  margin-left: 15%;
+  background: #373737;
+  background-color: rgba(0,0,0,.5);
+  color:#F4F4F4;
+	padding: 60px;
+	clear: both;
+  font-size: 120%;
+  width: 60%;
+  float: center;
+ border-radius: 100px;
+}
+
+#content2{
+  line-height: 20px;
+  width:90%;
+  margin-left:10px;
+  margin-top: 60px;
+	background: #D7D7D7;
+  color:#373737;
+	padding: 60px;
+	clear: both;
+  border: 2px solid white;
+}
+
+#content3{
+  line-height: 20px;
+  width:90%;
+  margin-left:10px;
+  margin-top:200px;
+	background: #D7D7D7;
+  color:#373737;
+	padding: 60px;
+	clear: both;
+  border: 2px solid white;
+}
+
+#content4{
+  line-height: 20px;
+  width:90%;
+  margin-left:10px;
+  margin-top:60px;
+	background: #D7D7D7;
+  color:#373737;
+	padding: 60px;
+	clear: both;
+  border: 2px solid white;
+}
+
+#footer{
+	border-bottom: 1px #ccc solid;
+	margin-bottom: 0px;
+  background: #373737;
+  color:#F4f4f4;
+	margin-top: 10%;
+  padding-top: 5%;
+}
+	#footer p{
+    width: 100%;
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 0.001em;
+		color: white;
+	}
+
+#content,
+ul li a{ box-shadow: 0px 0px 0px #999; }
+
+#banner {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 300px;
+  z-index: -1;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
+
+.cover {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("background.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+    width:100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center{
+    width:80%;
+    margin:5% auto;
+    margin-left: 25%;
+    text-align:left;
+}

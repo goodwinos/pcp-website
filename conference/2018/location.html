@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bevan|Bree+Serif|Cabin+Sketch|Cinzel|Merienda|Monoton|Orbitron|Raleway" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet'>
+<!-- your webpage info goes here -->
+
+    <title>PCP2018</title>
+
+	<meta name="author" content="your name" />
+	<meta name="description" content="" />
+
+<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+  <div id="nav">
+    <br>
+    <br>
+    <br>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="location.html">Location and Accomodation</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="logo">
+   <h1>Location and Accomodation</h1>
+ </div>
+ <img id="banner" src="tokyo.jpg" alt="Tokyo" class="cover">
+
+<body>
+
+<!-- webpage content goes here in the body -->
+
+<div id="page">
+
+  <div id="content">
+    <h2>Getting There</h2>
+    <h2>-</h2>
+    <p style="line-height:1.5" >
+
+    <u>  <a href="http://www.tokyo-cc.co.jp/eng/access_ariake.html" target="_blank" style="color: #373737" >Tokyo Conference Center Ariake </a></u>, Tokyo, Japan
+    </p>
+
+   <div id="map"></div>
+   <script>
+   var labels = 'Tokyo Conference Center Ariake';
+  var labelIndex = 0;
+     function initMap() {
+       var Tokyo = {lat: 35.633897, lng: 139.792820};
+       var map = new google.maps.Map(document.getElementById('map'), {
+         zoom: 16,
+         center: Tokyo
+       });
+       var marker = new google.maps.Marker({
+         position: Tokyo,
+         label: labels,
+         map: map
+       });
+     }
+   </script>
+   <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYEaXErMnFBTN7boQRscXEbxBpnzyzU6Y&callback=initMap">
+   </script>
+
+
+    <p style="line-height:1.5" >
+      About Tokyo
+    </p>
+    <p style="line-height:1.5" >
+      The conference will be in the <u><a href="http://somelink" style="color: #373737">
+Tokyo Bay Ariake Washington Hotel (Maple Room), Kōtō-ku, Tōkyō-to 135-0063 Japan
+</a></u>.
+      <br>
+      For a map of the venue please visit <u><a href="http://somewhere" style="color: #373737">this</a></u> page.
+    </p>
+  </div>
+
+  <div id="content2">
+    <h2>Accomodation</h2>
+    <h2>-</h2>
+    <p style="line-height:1.5" >
+      There are many accomodation options in the vicinity of the center.
+    </p>
+  </div>
+
+<!--  <div id="content2">*/
+    <h2>Nearby Attractions</h2>
+    <h2>-</h2>
+    <p style="line-height:1.5" >
+      Things to do in Tokyo
+    </p>
+  </div> -->
+
+</div>
+</body>
